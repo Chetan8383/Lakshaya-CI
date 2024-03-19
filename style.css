@@ -853,7 +853,7 @@ footer .scroll-up a i {
     font-size: .9rem;
     color: rgb(83, 82, 82);
     font-family: "Archivo Narrow", sans-serif;
-    height: 8rem;
+    height: 8rem !important;
     padding-right: 20px;
     overflow: auto;
 }
