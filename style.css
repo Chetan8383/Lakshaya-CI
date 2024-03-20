@@ -668,6 +668,15 @@ body {
     margin-right: 5px;
 }
 
+.Contact .copyright a {
+    color: white;
+    transition: .2s all ease-in-out;
+}
+
+.Contact .copyright a:hover {
+    color: #ED1C24;
+}
+
 @media (max-width: 800px) {
     .Contact ul li {
         font-size: .9rem;
