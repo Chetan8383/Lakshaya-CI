@@ -34,4 +34,3 @@ var swiper = new Swiper(".students-projects-slider", {
         prevEl: ".swiper-button-prev",
     },
 });
-

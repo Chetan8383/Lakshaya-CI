@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* font-family: "Poppins", sans-serif; */
 
 @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* font-family: "Kalam", cursive; */
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* font-family: "Archivo Narrow", sans-serif; */
 
 body {
@@ -72,6 +69,7 @@ body {
 }
 
 @media (max-width: 450px) {
+
     .navbar .navbar-nav {
         width: 100% !important;
     }
@@ -79,6 +77,10 @@ body {
     .navbar-nav .nav-item .active {
         background-color: #F8F9FA;
         color: #0D6EFD;
+    }
+
+    .Contact .btn-your-email::placeholder {
+        font-weight: bold;
     }
 
     .btn-try-free {
@@ -743,11 +745,6 @@ body {
         font-size: 1rem;
     }
 
-    .Contact .btn-your-email {
-        padding: 2px 2px;
-
-    }
-
     .Contact .email-text {
         font-size: .7rem;
     }
@@ -757,7 +754,7 @@ body {
     }
 
     .copyright small {
-        font-size: .5rem;
+        font-size: .7rem;
     }
 }
 
@@ -875,6 +872,30 @@ footer .scroll-up a i {
 
 .courses-slider .slide p::-webkit-scrollbar-thumb {
     background-color: #0D6EFD;
+}
+
+/* ////////////////////KNOW-MORE//////////////////////// */
+
+.know-more .know-about-gd img {
+    width: 24em;
+    transition: .4s;
+}
+
+.know-more .know-about-gd:hover img {
+    filter: drop-shadow(grey 9px 9px 9px);
+    transform: translateY(-1rem);
+}
+
+.know-more .know-about-gd button {
+    background-color: #bde0fe;
+    color: #0D6EFD;
+    transition: .3s all ease;
+}
+
+.know-more .know-about-gd button:hover {
+    background-color: #0D6EFD;
+    color: white;
+    letter-spacing: 2px;
 }
 
 /* ////////////////////STUDENTS-ROJECTS-SLIDER//////////////////////// */
@@ -1157,6 +1178,85 @@ footer .scroll-up a i {
     background-color: #f7f5ec;
 }
 
+/* ////////////////////////////////////PANO-VIEW//////////////////////// */
+
+/* ///////////////////////GALLARY/////////////////////////////// */
+
+@import "https://unpkg.com/normalize.css";
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+:root {
+    --gap: 1rem;
+    --card-width: clamp(280px, 20vw, 100vw);
+    --card-aspect-ratio: 5 / 7;
+    --card-height: calc(var(--card-width) * (7 / 5));
+}
+
+.gallary {
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.gallary .grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, var(--card-width));
+    gap: 1rem;
+    /* overflow: hidden shouldn't break this? */
+    overflow: hidden;
+}
+
+
+.gallary .column {
+    display: grid;
+    gap: 1rem;
+    align-content: start;
+}
+
+.gallary .column:not(:nth-of-type(3)) {
+    animation: scale 1s linear both;
+    animation-timeline: scroll(root);
+}
+
+/* The distance is the number of cards minus 100vh */
+.gallary .column:is(:nth-of-type(2), :nth-of-type(4)) {
+    --origin: calc(var(--gap) * -1);
+    --destination: calc(var(--card-height) * 1.5 + var(--gap));
+}
+
+.gallary .column:is(:nth-of-type(1), :nth-of-type(5)) {
+    --origin: calc(var(--gap) * -2);
+    --destination: calc(var(--card-height) * 3.4 + var(--gap));
+}
+
+@keyframes scale {
+    0% {
+        transform: translateY(var(--origin, 0%));
+    }
+
+    100% {
+        transform: translateY(var(--destination, -50%));
+    }
+}
+
+.gallary img {
+    max-width: 100%;
+    border: 0;
+    padding: 0;
+    max-height: 100%;
+    width: 100%;
+    aspect-ratio: 5 / 7;
+    background: hsl(0 0% 80%);
+    border-radius: 1rem;
+}
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////LOGIN////////////////////////////////////////////////// */
@@ -1237,5 +1337,262 @@ footer .scroll-up a i {
 
     .login .sign-with {
         font-size: 0.7rem;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////GRAPHIC DESIGNING////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.graphic-designing .introduction {
+    background-color: #9B1D20;
+    background-image: url(images/cutted-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: auto;
+}
+
+.graphic-designing .breadcrumb li {
+    color: white;
+    font-size: .9rem;
+}
+
+.graphic-designing .breadcrumb li a {
+    text-decoration: none;
+    color: white;
+    transition: .2s all ease-in-out;
+}
+
+.graphic-designing .breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.parallax-wrap {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-wrap span img {
+    /* filter: drop-shadow(#141414a6 0px 50px 50px); */
+    margin: 0;
+    overflow: hidden;
+    width: 500px;
+}
+
+.parallax-wrap span {
+    position: absolute;
+    height: auto;
+    width: 550px;
+}
+
+.parallax-wrap span h1 {
+    font-size: 3rem;
+}
+
+.parallax-wrap span:nth-child(1) {
+    top: 0%;
+    left: 0%;
+    z-index: 3;
+}
+
+.parallax-wrap span:nth-child(2) {
+    top: 15%;
+    left: 40%;
+    z-index: 3;
+}
+
+@media (max-width:1024px) {
+    .parallax-wrap span img {
+        width: 450px;
+    }
+}
+
+@media (max-width:940px) {
+
+    .parallax-wrap span h1 {
+        font-size: 2.2rem;
+    }
+
+    .parallax-wrap span img {
+        width: 400px;
+    }
+
+    .parallax-wrap span {
+        width: 380px;
+    }
+
+    .parallax-wrap span:nth-child(2) {
+        left: 45%;
+    }
+}
+
+@media (max-width:700px) {
+
+    .parallax-wrap span img {
+        width: 350px;
+    }
+
+    .parallax-wrap span:nth-child(1) {
+        top: 5%;
+    }
+
+    .parallax-wrap span {
+        font-size: 0.9rem;
+        width: fit-content;
+    }
+
+    .parallax-wrap span p {
+        padding-right: 1.5rem;
+    }
+
+}
+
+@media (max-width:576px) {
+
+    .graphic-designing .introduction {
+        background-size: contain;
+    }
+
+    .parallax-wrap {
+        height: 90vh;
+    }
+
+    .parallax-wrap span img {
+        display: none;
+    }
+
+    .parallax-wrap span:nth-child(2) {
+        left: 10%;
+    }
+
+    .parallax-wrap span {
+        width: 500px;
+    }
+}
+
+@media (max-width:450px) {
+    .graphic-designing .parallax-wrap img {
+        display: none;
+    }
+
+    .parallax-wrap span h1 {
+        font-size: 2.5rem;
+    }
+
+    .parallax-wrap span {
+        width: fit-content;
+    }
+
+    .parallax-wrap span:nth-child(2) {
+        left: 5%;
+    }
+}
+
+/* ///////////////////////highlights/////////////////////// */
+
+.graphic-designing .highlights {
+    background-color: #9B1D20;
+}
+
+.graphic-designing .highlights h1 {
+    font-family: "Archivo Narrow", sans-serif;
+    letter-spacing: 4px;
+}
+
+.graphic-designing .highlights ul li i {
+    margin-right: 4px;
+}
+
+/* //////////////////what-you-will-learn/////////////// */
+
+.graphic-designing .what-you-will-learn {
+    background-color: #9B1D20;
+    padding: 7rem 0rem;
+    background-image: url(images/peacock-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+}
+
+.what-you-will-learn .left-nav a {
+    border: none;
+    background: none;
+    color: whitesmoke;
+    font-weight: bold;
+    border-left: 1px #bde0fe solid;
+    transition: .2ms;
+    font-family: "Archivo Narrow", sans-serif;
+    letter-spacing: 2px;
+}
+
+.what-you-will-learn .left-nav .active {
+    color: #F3A712;
+    border-left: 2px #F3A712 solid;
+}
+
+.what-you-will-learn .left-nav a:hover {
+    color: #F3A712;
+    border-left: 2px #F3A712 solid;
+}
+
+.what-you-will-learn .tab-content i {
+    margin-right: 4px;
+}
+
+@media (max-width:1024px) {
+
+    .graphic-designing .what-you-will-learn {
+        background-size: 40%;
+    }
+
+    .what-you-will-learn .left-nav a {
+        letter-spacing: normal;
+    }
+}
+
+@media (max-width:450px) {
+    .graphic-designing .what-you-will-learn {
+        background-image: none;
+    }
+}
+
+/* /////////////////////tools//////////////////////////// */
+
+.tools {
+    background: linear-gradient(#9B1D20 10%, #F3A712 55%);
+}
+
+.tools h2 {
+    font-family: "Archivo Narrow", sans-serif;
+}
+
+.tools .software ul {
+    user-select: none;
+    display: flex;
+    justify-content: center;
+}
+
+.tools .software ul li {
+    background: transparent;
+    border: 0px;
+}
+
+@media (max-width:768px) {
+    .tools .software ul img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .tools {
+        /* background-color: #0D6EFD; */
+        background: linear-gradient(#9B1D20 5%, #F3A712 25%);
     }
 }
