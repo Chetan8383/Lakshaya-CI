@@ -93,6 +93,11 @@ body {
 
 }
 
+@media (max-width: 322px) {
+    .navbar .nav-access a .fa-magnifying-glass {
+        display: none !important;
+    }
+}
 
 /* ///////////////////////////////FRONT PAGE/////////////////////////////////// */
 
@@ -1456,6 +1461,7 @@ footer .scroll-up a i {
 
     .graphic-designing .introduction {
         background-size: contain;
+        background-attachment: fixed;
     }
 
     .parallax-wrap {
@@ -1490,6 +1496,10 @@ footer .scroll-up a i {
 
     .parallax-wrap span:nth-child(2) {
         left: 5%;
+    }
+
+    .parallax-wrap {
+        height: 55vh;
     }
 }
 
@@ -1592,7 +1602,6 @@ footer .scroll-up a i {
 @media (max-width:750px) {
 
     .tools {
-        /* background-color: #0D6EFD; */
         background: linear-gradient(#9B1D20 5%, #F3A712 25%);
     }
 }
