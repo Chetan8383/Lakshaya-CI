@@ -43,7 +43,7 @@
                     <i class="fa-solid fa-bars-progress text-danger fs-3"></i>
                 </button>
                 <div class="collapse navbar-collapse rounded-bottom-4 py-2 bg-light" id="navbarSupportedContent">
-                    <ul class="navbar-nav p-2 ms-xl-auto me-auto w-50 justify-content-around">
+                    <ul class="navbar-nav p-2 ms-lg-auto me-auto w-50 justify-content-around">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
@@ -81,7 +81,7 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="courses">
         <section class="courses-carsousel ">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -155,7 +155,7 @@
                     <div class="swiper-wrapper" data-aos="fade-up" data-aos-duration="1000">
                         <div class="swiper-slide slide">
                             <img src="images/courses-slider-img1.jpg" alt="">
-                            <h3>Computer&nbsp;Concept</h3>
+                            <h3>Computer&nbsp;Conpect</h3>
                             <p>
                                 <strong>Module 1:- Computer Operating</strong>
                                 <br>
@@ -428,8 +428,8 @@
                         </a>
                     </div>
                     <div class="col-12 col-sm-6 know-about-gd text-center ">
-                        <a href="graphic-designer.html" class="text-decoration-none">
-                            <img src="images/peacock-bg.png" alt="">
+                        <a href="web-development.html" class="text-decoration-none">
+                            <img src="images/web-dev-pic.svg" alt="">
                             <h2 class="text-dark">Web Development</h2>
                             <button class="btn" type="button">Know More</button>
                         </a>
@@ -437,12 +437,64 @@
                 </div>
             </div>
         </section>
+
+        <!-- /////////////////////////////WEB_DEV_CAROUSEL START -->
+        <div class="container-fluid pt-5 text-dark p-0 mt-5">
+            <div id="web-dev-carousel">
+                <h1 class="text-center fw-bold" style="font-family: Raleway, sans-serif;" data-aos="fade-up"
+                    data-aos-duration="1000">Students <span class="text-primary">Work</span></h1>
+                <section class="web-develpoment-project">
+                    <p class="text-center text-danger fw-bold" style="font-family: Kalam, cursive; ">
+                        <small>WEB_DEVELOPMENT</small></p>
+                    <div class="web-dev-carousel">
+                        <div class="slider-item Project1" data-href="#">
+                            <img src="images/me.png" width="100%" height="75%" alt="">
+                            <h4 class="fw-bold">Chetan Mehra</h4>
+                            <a href="https://chetan8383.github.io/Lakshaya-CI/" target="_blank"><button type="button"
+                                    class="mt-2 px-2">View</button></a>
+                        </div>
+                        <div class="slider-item project2" data-href="#">
+                            <img src="images/web-dev-student-2.jpg" width="100%" height="75%" alt="">
+                            <h4 class="fw-bold">Sohail Saifi</h4>
+                            <a href="https://sohailsaifi.com/Site/projects" target="_blank"><button type="button"
+                                    class="mt-2 px-2">View</button></a>
+                        </div>
+                        <div class="slider-item project3" data-href="#">
+                            <img src="images/web-dev-student-3.jpg" width="100%" height="75%" alt="">
+                            <h4 class="fw-bold">Anand Kumar</h4>
+                            <a href="https://chetan8383.github.io/LITTLE-FASHION/" target="_blank"><button type="button"
+                                    class="mt-2 px-2">View</button></a>
+                        </div>
+                        <div class="slider-item project4 overflow-auto" data-href="#">
+                            <img src="images/web-dev-proj-dog site.png" width="100%" height="auto" alt="">
+                        </div>
+                        <div class="slider-item project5 overflow-auto" data-href="#">
+                            <img src="images/web-dev-proj-little fashion.png" width="100%" height="auto" alt="">
+                        </div>
+                        <div class="slider-item project6 overflow-auto" data-href="#">
+                            <img src="images/web-dev-proj-music.png" width="100%" height="auto" alt="">
+                        </div>
+                        <div class="slider-item project7 overflow-auto" data-href="#">
+                            <img src="images/web-dev-proj-travel.png" width="100%" height="auto" alt="">
+                        </div>
+                        <div class="slider-item project8 overflow-auto" data-href="#">
+                            <img src="images/web-dev-proj-purple ui.png" width="100%" height="auto" alt="">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- /////////////////////////////WEB_DEV_CAROUSEL END -->
+
         <section class="students-projects overflow-hidden" data-aos="fade-up" data-aos-duration="1000">
             <div class="container py-5 text-center">
-                <h1 class="fw-bolder ">
+                <h1 class="fw-bold ">
                     Student
                     <span class="text-danger">Projects</span>
                 </h1>
+                <p class="text-center text-primary fw-bold" style="font-family: Kalam, cursive;">
+                    <small>GRAPHIC_DESIGNING</small></p>
+
                 <div class="swiper students-projects-slider mt-3">
                     <div class="swiper-wrapper ">
                         <div class="swiper-slide slide position-relative">
@@ -562,9 +614,8 @@
                 </div>
                 <div class="copyright">
                     <div class="col col-12 p-0 p-sm-2 text-center fw-light"><small>&copy; Copyright 2024
-                            by <span style="color: #ED1C24;">LakshayComputerInstitute</span> | Developed By <a
-                                href="https://www.instagram.com/chandu_rajputt/" target="_blank"
-                                class="text-decoration-none">Chetan</a> All Rights Reserved.</small>
+                            by <span style="color: #ED1C24;">LakshayComputerInstitute</span> | Developed By <a href="#"
+                                target="_blank" class="text-decoration-none">Chetan</a> All Rights Reserved.</small>
                     </div>
                 </div>
             </div>
@@ -591,6 +642,9 @@
     <script>
         AOS.init();
     </script>
+    <!-- ////////////////////////////////////WEB_DEV_PROJECT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/micro-slider@1.0.9/dist/micro-slider.min.js"></script>
 </body>
 
 </html>

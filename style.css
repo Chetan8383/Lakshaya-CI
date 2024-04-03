@@ -7,8 +7,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /* font-family: "Archivo Narrow", sans-serif; */
 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/* font-family: "Raleway", sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+/*  font-family: "Bebas Neue", sans-serif; */
+
 body {
     font-family: "Poppins", sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 3px;
+    background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: white;
 }
 
 .navbar {
@@ -906,16 +921,15 @@ footer .scroll-up a i {
 /* ////////////////////STUDENTS-ROJECTS-SLIDER//////////////////////// */
 
 .students-projects-slider {
-    width: 40%;
+    width: 38%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .students-projects-slider .slide {
-    height: 40rem;
+    height: 35rem;
     background-color: #F5F2EB;
-    /* backdrop-filter: blur(5px); */
     border-radius: 18px;
     user-select: none;
 }
@@ -946,7 +960,6 @@ footer .scroll-up a i {
 .students-projects-slider .slide p {
     color: rgb(83, 82, 82);
     font-family: "Kalam", cursive;
-    /* color: #0D6EFD; */
     font-size: 1.1rem;
     margin: 0;
 }
@@ -1258,10 +1271,12 @@ footer .scroll-up a i {
     padding: 0;
     max-height: 100%;
     width: 100%;
+    object-fit: cover;
     aspect-ratio: 5 / 7;
     background: hsl(0 0% 80%);
     border-radius: 1rem;
 }
+
 
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* /////////////////////////////////////////////////////LOGIN////////////////////////////////////////////////// */
@@ -1603,5 +1618,318 @@ footer .scroll-up a i {
 
     .tools {
         background: linear-gradient(#9B1D20 5%, #F3A712 25%);
+    }
+}
+
+.web-development
+/* ////////////////////////////////////////////////////////////////////////
+/////////////////////////////////WEB DEVELOPMENT///////////////////////////
+//////////////////////////////////////////////////////////////////////////*/
+
+.web-development .breadcrumb li {
+    color: white;
+    font-size: .9rem;
+}
+
+.web-development .breadcrumb li a {
+    text-decoration: none;
+    color: white;
+    transition: .2s all ease-in-out;
+}
+
+.web-development .breadcrumb li a:hover {
+    text-decoration: underline;
+}
+
+.web-development {
+    font-family: "Raleway", sans-serif;
+}
+
+.web-development .font-transparent {
+    color: transparent;
+    font-size: 6rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-family: "Bebas Neue", sans-serif;
+    line-height: 0px;
+}
+
+.web-development .font-color {
+    font-size: 4rem;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 10px;
+    background: -webkit-linear-gradient(45deg, #0D6EFD, #bde0fe);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width:450px) {
+
+    .web-development .font-color {
+        font-size: 3rem;
+    }
+
+}
+
+/* //////////////////////////HIGHLIGHT/////////////////// */
+
+/* The device with borders */
+.web-development .phone-layout {
+    position: relative;
+    width: 520px;
+    height: 600px;
+    margin: auto;
+    border: 10px black solid;
+    border-top-width: 10px;
+    border-bottom-width: 12px;
+    border-radius: 36px;
+}
+
+/* The screen (or content) of the device */
+.web-development .phone-layout .content {
+    width: auto;
+    height: 100%;
+    background: black;
+    border-radius: 26px;
+}
+
+@media (max-width:1000px) {
+    .web-development .phone-layout {
+        width: fit-content;
+    }
+}
+
+@media (max-width:500px) {
+    .web-development .phone-layout {
+        width: fit-content;
+        height: 500px;
+    }
+}
+
+/* /////////////////what-you-will-learn////////////////////////// */
+
+.web-development .what-you-will-learn .diploma .left-nav a {
+    border-left: #bde0fe solid 1px;
+}
+
+.web-development .what-you-will-learn .diploma .left-nav .active {
+    color: #0D6EFD;
+    border-left: 2px #0D6EFD solid;
+}
+
+.web-development .what-you-will-learn .diploma h4,
+.web-development .what-you-will-learn .advance h4 {
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+}
+
+.web-development .what-you-will-learn .diploma .tab-content,
+.web-development .what-you-will-learn .advance .tab-content {
+    font-size: 1.3rem;
+}
+
+.web-development .what-you-will-learn .diploma .left-nav a:hover {
+    color: #0D6EFD;
+    border-left: 2px #0D6EFD solid;
+}
+
+.web-development .what-you-will-learn .advance .left-nav a {
+    border-left: #9B1D20 solid 1px;
+}
+
+.web-development .what-you-will-learn .advance .left-nav .active {
+    color: #ED1C24;
+    border-left: 2px #ED1C24 solid;
+}
+
+.web-development .what-you-will-learn .advance .left-nav a:hover {
+    color: #ED1C24;
+    border-left: 2px #ED1C24 solid;
+}
+
+@media (max-width:800px) {
+
+
+    .web-development .what-you-will-learn .diploma .tab-content,
+    .web-development .what-you-will-learn .advance .tab-content {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* /////////////////////////////////WEB_DEVELOPMENT_PROJECTS////////////////////////////////////*/
+
+a,
+a:link,
+a:visited {
+    color: #212121;
+    text-decoration: none;
+}
+
+.web-develpoment-project .web-dev-carousel {
+    height: 560px;
+    position: relative;
+    width: 100%;
+}
+
+.web-develpoment-project .web-dev-carousel.fullwidth {
+    height: 500px;
+}
+
+.web-develpoment-project .web-dev-carousel.fullwidth .slider-item {
+    height: 480px;
+    line-height: 480px;
+    width: 100%
+}
+
+.web-develpoment-project .slider-wrapper {
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transform-origin: 0 50%;
+    perspective: 800px !important;
+}
+
+.web-develpoment-project .slider-item {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .06), 0 1px 2px rgba(0, 0, 0, .12);
+    display: none;
+    height: 350px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    width: 270px;
+    cursor: pointer;
+    border: 5px solid black;
+    overflow: hidden;
+}
+
+.web-develpoment-project .slider-item::-webkit-scrollbar {
+    width: 0px;
+    background-color: #212529;
+}
+
+.web-develpoment-project .slider-item::-webkit-scrollbar-thumb {
+    background-color: white;
+}
+
+.web-develpoment-project .slider-item img {
+    object-fit: cover;
+}
+
+.web-develpoment-project .slider-item h4 {
+    color: white;
+    margin: 4px;
+}
+
+.web-develpoment-project .slider-item a button {
+    border: 0;
+    border-radius: .6rem 0px;
+    background-color: #0D6EFD;
+    color: white;
+    transition: .4s ease-in;
+    border: #0D6EFD solid 2px;
+}
+
+.web-develpoment-project .slider-item a button:hover {
+    background-color: #bde0fe;
+    color: black;
+
+    border: #0D6EFD solid 2px;
+}
+
+.web-develpoment-project .indicators {
+    top: 0;
+    left: 50%;
+    padding: 0;
+    list-style-type: none;
+    margin: 40px 0 0 -77px;
+    position: absolute;
+}
+
+.web-develpoment-project .indicators li {
+    color: #255f8b;
+    float: left;
+    height: 16px;
+    margin-right: 8px;
+    text-align: center;
+    width: 16px;
+}
+
+.web-develpoment-project .indicators li:last-child {
+    margin: 0;
+}
+
+.web-develpoment-project .indicators a {
+    background: #00416a;
+    border-radius: 8px;
+    display: inline-block;
+    height: 16px;
+    width: 16px;
+}
+
+.web-develpoment-project .indicators .active a {
+    background: #e4e5e6;
+}
+
+.courses .web-develpoment-project .indicators .active a {
+    background: #bde0fe;
+}
+
+
+.web-develpoment-project .Project1 {
+    border-radius: 50px !important;
+    background-color: black;
+}
+
+.web-develpoment-project .project2 {
+    border-radius: 50px !important;
+    background-color: black;
+}
+
+.web-develpoment-project .project3 {
+    border-radius: 50px !important;
+    background-color: black;
+}
+
+.web-develpoment-project .project4 {
+    border-radius: 25px !important;
+}
+
+.web-develpoment-project .project5 {
+    border-radius: 25px !important;
+}
+
+.web-develpoment-project .project6 {
+    border-radius: 25px !important;
+}
+
+.web-develpoment-project .project7 {
+    border-radius: 25px !important;
+}
+
+.web-develpoment-project .project8 {
+    border-radius: 25px !important;
+}
+
+/* //////////////////////////////////////////// */
+
+.web-development .tools {
+    background: transparent;
+}
+
+@media (max-width:768px) {
+    .web-development .tools .software ul img {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+@media (max-width:750px) {
+
+    .web-development .tools {
+        background: none;
     }
 }
