@@ -143,6 +143,7 @@ body::-webkit-scrollbar-thumb {
 
 .btn-find-courses {
     background-color: #0D6EFD;
+    border: 2px #0D6EFD solid;
     color: white;
 }
 
@@ -754,7 +755,7 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 450px) {
 
     .Contact ul li {
-        font-size: .8rem;
+        font-size: .9rem;
     }
 
     .Contact ul li p {
@@ -762,15 +763,15 @@ body::-webkit-scrollbar-thumb {
     }
 
     .Contact .head {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
-    .Contact .email-text {
-        font-size: .7rem;
+    .Contact .btn-your-email {
+        font-size: .8rem;
     }
 
     .Contact .icons li {
-        font-size: 1rem;
+        font-size: 1.3rem;
     }
 
     .copyright small {
@@ -883,6 +884,9 @@ footer .scroll-up a i {
     height: 8rem !important;
     padding-right: 20px;
     overflow: auto;
+}
+.courses-slider .slide p strong{
+    color: #212529;
 }
 
 .courses-slider .slide p::-webkit-scrollbar {
