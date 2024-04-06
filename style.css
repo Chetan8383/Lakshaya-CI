@@ -18,7 +18,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-    width: 3px;
+    width: 5px;
     background-color: black;
 }
 
@@ -39,8 +39,8 @@ body::-webkit-scrollbar-thumb {
     color: black;
     font-weight: 500;
     border: 0;
-    transition: .2s all ease-out;
-    transform-origin: right;
+    transition: .5s all ease-out;
+    transform-origin: right bottom;
     border-radius: 35px;
     padding: 10px 20px;
 }
@@ -310,11 +310,16 @@ body::-webkit-scrollbar-thumb {
 
 .category-card .card-body .btn-view-courses {
     font-size: .9rem;
+    background: linear-gradient(to right, #0D6EFD 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
 }
 
 .category-card .card-body .btn-view-courses:hover {
-    background-color: #0D6EFD;
+    /* background-color: ; */
     color: white;
+    background-position: left bottom;
 }
 
 .category-card .card .card-body .card-text {
@@ -480,14 +485,17 @@ body::-webkit-scrollbar-thumb {
 }
 
 .popular-courses .cards .card1 .content .card-btn {
-    transition: .2s;
     color: #0D6EFD;
     text-decoration: none;
+    background: linear-gradient(to right, #0D6EFD 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
 }
 
 .popular-courses .cards .card1 .content .card-btn:hover {
-    background-color: #0D6EFD;
-    color: #bde0fe;
+    background-position: left bottom;
+    color: white;
 }
 
 .view-all-btn {
@@ -555,22 +563,10 @@ body::-webkit-scrollbar-thumb {
     }
 
     .popular-courses .cards .card1 .content {
-        position: static;
+        position: absolute;
+        top: 30%;
     }
 
-    .popular-courses .cards .card1 .content .content-text {
-        font-size: .7rem;
-    }
-
-    .popular-courses .cards .card1 .content .star {
-        font-size: .6rem;
-    }
-}
-
-@media (max-width: 450px) {
-    .popular-courses .cards .card1 .content .card-btn {
-        font-size: .6rem;
-    }
 }
 
 /* ////////////////////////////////////////////////////////// */
@@ -823,13 +819,16 @@ footer .scroll-up a i {
 }
 
 .courses-carsousel .carousel-inner .carousel-caption button {
-    background-color: #bde0fe;
-    color: #0D6EFD;
-    transition: .3s ease;
+    color: white;
+    border: 1px #0D6EFD solid;
+    background: linear-gradient(to right, #0D6EFD 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
 }
 
 .courses-carsousel .carousel-inner .carousel-caption button:hover {
-    filter: brightness(70%);
+    background-position: left bottom;
 }
 
 @media (max-width: 450px) {
@@ -846,8 +845,12 @@ footer .scroll-up a i {
 
 /* ///////////////////////Courses-slider /////////////////////////////*/
 
+.courses-slider {
+    max-width: 1400px;
+}
+
 .courses-slider .slide {
-    width: 30rem;
+    max-width: 30rem;
     border-radius: 1rem;
     text-align: center;
     margin-bottom: 3rem;
@@ -885,17 +888,26 @@ footer .scroll-up a i {
     padding-right: 20px;
     overflow: auto;
 }
-.courses-slider .slide p strong{
+
+.courses-slider .slide p strong {
     color: #212529;
 }
 
 .courses-slider .slide p::-webkit-scrollbar {
-    width: 3px;
-    background-color: #bde0fe;
+    width: 3px !important;
+    background-color: #bde0fe !important;
 }
 
 .courses-slider .slide p::-webkit-scrollbar-thumb {
-    background-color: #0D6EFD;
+    background-color: #0D6EFD !important;
+}
+
+@media (max-width:450px) {
+
+    .courses-slider .slide p {
+        height: 10rem !important;
+    }
+
 }
 
 /* ////////////////////KNOW-MORE//////////////////////// */
@@ -1202,6 +1214,12 @@ footer .scroll-up a i {
 
 /* ////////////////////////////////////PANO-VIEW//////////////////////// */
 
+@media (max-width:450px) {
+    .pano-view .pano-iframe {
+        height: 200px;
+    }
+}
+
 /* ///////////////////////GALLARY/////////////////////////////// */
 
 @import "https://unpkg.com/normalize.css";
@@ -1394,7 +1412,7 @@ footer .scroll-up a i {
 .parallax-wrap {
     position: relative;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -1402,7 +1420,7 @@ footer .scroll-up a i {
 }
 
 .parallax-wrap span img {
-    /* filter: drop-shadow(#141414a6 0px 50px 50px); */
+    filter: drop-shadow(#141414a6 0px 50px 50px);
     margin: 0;
     overflow: hidden;
     width: 500px;
@@ -1537,7 +1555,9 @@ footer .scroll-up a i {
     margin-right: 4px;
 }
 
+/* //////////////////////////////////////////////////// */
 /* //////////////////what-you-will-learn/////////////// */
+/* //////////////////////////////////////////////////// */
 
 .graphic-designing .what-you-will-learn {
     background-color: #9B1D20;

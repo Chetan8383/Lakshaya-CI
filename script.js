@@ -4,6 +4,9 @@ var swiper = new Swiper(".courses-slider", {
     grabCursor: true,
     // loop: true,
 
+    keyboard: {
+        enabled: true,
+    },
 
     pagination: {
         el: ".swiper-pagination",
