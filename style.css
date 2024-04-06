@@ -26,6 +26,10 @@ body::-webkit-scrollbar-thumb {
     background-color: white;
 }
 
+.container-fluid {
+    max-width: 1440px;
+}
+
 .navbar {
     height: 6rem;
     box-shadow: 0px 1px 16px rgba(128, 128, 128, 0.3);
@@ -181,6 +185,14 @@ body::-webkit-scrollbar-thumb {
 .front-page-content .front-page-Contact .phone {
     background-color: #F5F2EB;
     font-size: 1.7rem;
+}
+
+
+@media (min-width:1440px) {
+    .front-page {
+        background-color: #F5F2EB;
+        border-radius: 0 0 8rem 8rem;
+    }
 }
 
 @media (max-width:992px) {
@@ -520,6 +532,13 @@ body::-webkit-scrollbar-thumb {
     background-color: #0D6EFD;
 }
 
+@media (min-width:1440px) {
+    .popular-courses {
+        background-color: #F5F2EB;
+        border-radius: 0 0 8rem 8rem;
+    }
+}
+
 @media (max-width: 760px) {
     .popular-courses .cards {
         height: auto;
@@ -831,6 +850,15 @@ footer .scroll-up a i {
     background-position: left bottom;
 }
 
+@media (min-width:1440px) {
+
+    .courses-carsousel .carousel-inner .carousel-item {
+        max-height: 50rem;
+        user-select: none;
+    }
+
+}
+
 @media (max-width: 450px) {
     .carousel-caption h2 {
         font-size: 1rem;
@@ -844,10 +872,6 @@ footer .scroll-up a i {
 }
 
 /* ///////////////////////Courses-slider /////////////////////////////*/
-
-.courses-slider {
-    max-width: 1400px;
-}
 
 .courses-slider .slide {
     max-width: 30rem;
@@ -900,6 +924,15 @@ footer .scroll-up a i {
 
 .courses-slider .slide p::-webkit-scrollbar-thumb {
     background-color: #0D6EFD !important;
+}
+
+
+@media (min-width:1440px) {
+
+    .courses-slider .slide p {
+        height: auto !important;
+    }
+
 }
 
 @media (max-width:450px) {
@@ -1412,7 +1445,7 @@ footer .scroll-up a i {
 .parallax-wrap {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -1448,7 +1481,34 @@ footer .scroll-up a i {
     z-index: 3;
 }
 
+@media (min-width:1440px) {
+
+    .parallax-wrap {
+        max-height: 120vh;
+    }
+
+    .parallax-wrap span img {
+        width: 650px;
+    }
+
+    .parallax-wrap span {
+        padding: 0 1rem;
+        width: 60%;
+        font-size: 1.6rem;
+    }
+
+    .parallax-wrap span h1 {
+        font-size: 5rem;
+    }
+
+    .parallax-wrap span:nth-child(2) {
+        bottom: 50%;
+        z-index: 3;
+    }
+}
+
 @media (max-width:1024px) {
+
     .parallax-wrap span img {
         width: 450px;
     }
@@ -1536,7 +1596,7 @@ footer .scroll-up a i {
     }
 
     .parallax-wrap {
-        height: 55vh;
+        height: 75vh;
     }
 }
 
@@ -1553,6 +1613,17 @@ footer .scroll-up a i {
 
 .graphic-designing .highlights ul li i {
     margin-right: 4px;
+}
+
+@media (min-width:1440px) {
+
+    .graphic-designing .highlights h1 {
+        font-size: 4rem;
+    }
+
+    .graphic-designing .highlights ul li {
+        font-size: 1.3rem;
+    }
 }
 
 /* //////////////////////////////////////////////////// */
@@ -1589,8 +1660,18 @@ footer .scroll-up a i {
     border-left: 2px #F3A712 solid;
 }
 
-.what-you-will-learn .tab-content i {
-    margin-right: 4px;
+@media (min-width:1400px) {
+    .what-you-will-learn h1 {
+        font-size: 4rem;
+    }
+
+    .what-you-will-learn .left-nav a {
+        font-size: 1.6rem;
+    }
+
+    .what-you-will-learn .tab-content {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width:1024px) {
